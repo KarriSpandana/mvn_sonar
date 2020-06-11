@@ -1,13 +1,7 @@
 pipeline {
    agent any
    stages {
-     stage('SCM') {
-         steps {  
-         // Get some code from a GitHub repository
-            git 'https://github.com/KarriSpandana/mvn_sonar.git'    
-     }
-      }
-      stage('Build Analysis') { 
+           stage('Build Analysis') { 
        steps {
             withSonarQubeEnv('sonar') {
                 sh '/opt/maven/bin/mvn clean verify sonar:sonar -Dsonar.password=admin -Dsonar.login=admin  -Dmaven.test.skip=true'  
