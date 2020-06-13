@@ -27,7 +27,7 @@
     <snapshotRepository>
         <id>artifactory</id>
         
-        <url>http://3.15.160.95:8081/artifactory/libs-snapshot-local</url>
+        <url>http://3.15.160.95:8081/artifactory/spandana-snapshots</url>
     </snapshotRepository>
 </distributionManagement>
   
