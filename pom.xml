@@ -25,7 +25,7 @@
   
   <distributionManagement>
     <snapshotRepository>
-        <id>snapshots</id>
+        <id>artifactory</id>
         
         <url>http://3.15.160.95:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
